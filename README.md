@@ -5,6 +5,8 @@
 ## stepic_shop_test
 
 Section_4.1.6 Подготовка окружения.
+Section_4.2.2 Базовая страница для проекта: BasePage
+
 
 
 
