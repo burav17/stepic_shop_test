@@ -12,7 +12,7 @@ Section_4.2.3 Page Object для главной страницы сайта
 
 Section_4.2.4 Первый тест на основе Page Object
 
-
+Section_4.2.5 Методы-проверки в Page Object
 
 
 
