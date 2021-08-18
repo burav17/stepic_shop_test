@@ -14,5 +14,7 @@ Section_4.2.4 Первый тест на основе Page Object
 
 Section_4.2.5 Методы-проверки в Page Object
 
+Section_4.2.6 Проверка элемента на странице
+
 
 
