@@ -9,17 +9,14 @@ class LoginPage(BasePage):
 
 
     def should_be_login_url(self):
-        # реализуйте проверку на корректный url адрес
         self.browser.get(self.url)        
         assert True
 
 
     def should_be_login_form(self):
-        # реализуйте проверку, что есть форма логина
         assert True
 
 
     def should_be_register_form(self):
-        # реализуйте проверку, что есть форма регистрации на странице
         assert True
         

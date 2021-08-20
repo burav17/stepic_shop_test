@@ -20,3 +20,5 @@ Section_4.2.7 Элементы страниц в паттерне Page Object
 
 Section_4.2.8 Реализация LoginPage
 
+Section_4.2.9 Переходы между страницами
+
