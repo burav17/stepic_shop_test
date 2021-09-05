@@ -9,7 +9,6 @@ class BasePage():
     def __init__(self, browser, url, timeout=10):
         self.browser = browser
         self.url = url
-        # timeout используется в проверке наличия элемента
         self.browser.implicitly_wait(timeout)
 
 
@@ -25,7 +24,6 @@ class BasePage():
         return True
 
 
-    # проверка на отсутствие элемента с ожиданием timeout
     def is_not_element_present(self, how, what, timeout=4):
         try:
             WebDriverWait(self.browser, timeout).until(EC.presence_of_element_located((how, what)))
@@ -34,7 +32,6 @@ class BasePage():
         return False
 
 
-    # проверка на исчезновение элемента в течении timeout
     def is_disappeared(self, how, what, timeout=4):
         try:
             WebDriverWait(self.browser, timeout, 1, TimeoutException).until_not(EC.presence_of_element_located((how, what)))
