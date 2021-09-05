@@ -30,7 +30,6 @@ class BasePage():
         try:
             WebDriverWait(self.browser, timeout).until(EC.presence_of_element_located((how, what)))
         except TimeoutException:
-#             print(f'\n{timeout = }')
             return True
         return False
 
@@ -40,7 +39,6 @@ class BasePage():
         try:
             WebDriverWait(self.browser, timeout, 1, TimeoutException).until_not(EC.presence_of_element_located((how, what)))
         except TimeoutException:
-#             print(f'\n{timeout = }')
             return False
         return True
 
@@ -81,4 +79,9 @@ class BasePage():
     def go_to_basket_page(self):
         link = self.browser.find_element(*BasePageLocators.BTN_BASKET)
         link.click()
+
+
+    def should_be_authorized_user(self):
+        assert self.is_element_present(*BasePageLocators.USER_ICON), "User icon is not presented," \
+                                                                     " probably unauthorised user"
         

@@ -5,6 +5,7 @@ class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     BTN_BASKET = (By.CSS_SELECTOR, ".basket-mini .btn-group a.btn.btn-default")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 
 class MainPageLocators():
@@ -18,9 +19,9 @@ class LoginPageLocators():
     LOGIN_BTN = (By.CSS_SELECTOR, 'button[name="login_submit"]')
     
     REGISTER_FORM = (By.CSS_SELECTOR, ".register_form")
-    LOGIN_REGISTRATION_EMAIL = (By.CSS_SELECTOR,"#id_registration-email")
-    LOGIN_REGISTRATION_PASSWORD1 = (By.CSS_SELECTOR,"#id_registration-password1")
-    LOGIN_REGISTRATION_PASSWORD2 = (By.CSS_SELECTOR,"#id_registration-password2")
+    LOGIN_REGISTRATION_EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
+    LOGIN_REGISTRATION_PASSWORD1 = (By.CSS_SELECTOR, "#id_registration-password1")
+    LOGIN_REGISTRATION_PASSWORD2 = (By.CSS_SELECTOR, "#id_registration-password2")
     LOGIN_REGISTRATION_BTN = (By.CSS_SELECTOR, 'button[name="registration_submit"]')
 
 
@@ -42,8 +43,8 @@ class ProductPageLocators():
 
 
 class BasketPageLocators:
-    BASKET_EMPTY = (By.CSS_SELECTOR, "#content_inner>p") # Ваша корзина пуста
+    BASKET_EMPTY = (By.CSS_SELECTOR, "#content_inner>p") # Корзина пуста
     # если в корзине есть товар
-    BASKET_TITLE_ROW = (By.CSS_SELECTOR, "#content_inner div.basket-title div.row") # Заголовки таблицы в корзине если есть покупка
+    BASKET_TITLE_ROW = (By.CSS_SELECTOR, "#content_inner div.basket-title div.row") # Заголовки в корзине
     BASKET_TOTALS = (By.CSS_SELECTOR, "#basket_totals") # Корзина готовая к оформлению
     
